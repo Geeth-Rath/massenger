@@ -1,0 +1,231 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.form{
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+/* toggle */
+.toggler{
+    display: flex; 
+	position: fixed; 
+	margin: 40px 58px auto;
+}
+
+/* User Name Enter */
+#inputuserName {  
+   
+    padding: 10px 7px;
+    margin: 8px 0;
+    outline: none;
+    border-radius: 34px;
+    font-size: 1.5rem;
+    height: 46px;
+    font-weight: 800;
+    width: 180px;
+    border: 1px 1px 1px #919191;
+  }
+
+#inputuserName:focus{
+    border : non;
+}
+
+/* Go button*/
+.button1{
+    border-radius: 4px;
+    background-color: #27b537;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    height: 45px;
+    font-size: 28px;
+    padding: 2px;
+    width: 76px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button1 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button1 span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button1:hover span {
+    padding-right: 25px;
+  }
+  
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+/* Entire chat*/
+.chat-applicaton{
+    max-width: 900px;
+	min-height: 500px;
+    margin: 126px  389px auto;
+    border: 1px solid #ddd;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.05);
+	border-top-right-radius:  95px;
+	border-bottom-left-radius:  95px;
+	position: fixed ;
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    z-index: -1;
+    top: -63px;
+
+}
+
+
+/* Chat Space */
+#chat-window{
+    height: 540px;
+    width: 582px;
+    
+    overflow: auto;
+    background: #f9f9f9;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+	border-top-right-radius:  108px;
+	border-bottom-left-radius:  96px; 
+}
+
+/* Petloge chat box*/
+#userName{
+	font-size: xx-large;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-size: 46px;
+    color: rgb(8, 8, 8);
+    text-shadow: 1px 1px 1px #919191,
+    1px 2px 1px #919191,
+    1px 3px 1px #919191,
+    1px 4px 1px #919191,
+    1px 5px 1px #919191,
+    1px 6px 1px #919191,
+    1px 7px 1px #919191,
+    1px 8px 1px #919191,
+    1px 9px 1px #919191,
+    1px 10px 1px #919191;
+}
+
+#uId{
+    color: rgb(253, 9, 9);
+}
+
+/* masseges */
+#output{
+   
+    box-sizing: border-box;
+    width: 20em;
+    min-height: 3em;
+    height: auto;
+    font-size: 15px;
+    border-radius: .5em;
+    margin: .5em;
+    line-height: 3em;
+    font-family: open sans-serif;
+    color: rgb(2, 2, 2);
+    overflow-wrap: break-word;
+    
+}
+
+#output:nth-child(odd){
+background-image: linear-gradient(90deg, #96fbc4 0%, #f9f586 100%);
+text-align: left;
+padding: 0px 16px;
+margin: 26px 37px;
+}
+
+#output:nth-child(even){
+
+background-image: linear-gradient(120deg, #fce497 0%, #fc8260 100%);
+
+text-align: left;
+transform:perspective(100px) rotate(45px);
+margin: 0 234px auto;
+padding: 0px 16px;
+}
+
+/* sending and typing */
+.below{
+	display: flex;
+}
+
+
+/* type messege */
+
+#input-message{
+    padding: 14px 20px;
+    margin: 8px 0;  
+    text-align: justify;
+    border-radius: 25px 0 0 25px;
+    width: 90%;
+}
+
+  #input-message:hover{    
+   background-image: linear-gradient(90deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  }
+  
+  #input-message:focus{
+    border: none;   
+    background-image: linear-gradient(90deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+   }
+    
+   /* send button */
+  #sendBt{
+    margin-left: 10px;
+    padding: 0 5px 0 5px;
+     }
+
+  .button2 {
+    padding: 15px 25px;
+    right: 55px;
+    position: absolute;
+ 	bottom: 61px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+
+  .button2:hover {
+      background-color: #3e8e41
+    }
+
+.button2:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
